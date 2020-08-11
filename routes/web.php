@@ -14,5 +14,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('dashboard');
+    return view('login.login');
+})->name('login');
+
+//** login //
+Route::post('/login','Auth\LoginController@login')->name('auth');
+
+
+Route::group(['middleware' => 'auth'], function () {
+	Route::get('/dashboard', 'HomeController@dashboard')->name('dashboard');
+
+
+	Route::resource('/usuarios','UserController',['names' => 'user']);
 });
+

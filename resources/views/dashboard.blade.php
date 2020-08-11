@@ -4,90 +4,36 @@
 
 @section('content')
 
+<!-- Small boxes (Stat box) -->
 <div class="row">
-  <div class="col-md-12">
-    <div class="card card-danger">
-      <div class="card-header">
-        <h3 class="card-title">Input masks</h3>
+  <div class="col-lg-3 col-6">
+    <!-- small box -->
+    <div class="small-box bg-info">
+      <div class="inner">
+        <h3>150</h3>
+        <p>Usuarios</p>
       </div>
-      <div class="card-body">
-        <!-- Date dd/mm/yyyy -->
-        <div class="form-group">
-          <label>Date masks:</label>
-
-          <div class="input-group">
-            <div class="input-group-prepend">
-              <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
-            </div>
-            <input type="text" class="form-control" data-inputmask-alias="datetime" data-inputmask-inputformat="dd/mm/yyyy" data-mask="" im-insert="false">
-          </div>
-          <!-- /.input group -->
-        </div>
-        <!-- /.form group -->
-
-        <!-- Date mm/dd/yyyy -->
-        <div class="form-group">
-          <div class="input-group">
-            <div class="input-group-prepend">
-              <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
-            </div>
-            <input type="text" class="form-control" data-inputmask-alias="datetime" data-inputmask-inputformat="mm/dd/yyyy" data-mask="" im-insert="false">
-          </div>
-          <!-- /.input group -->
-        </div>
-        <!-- /.form group -->
-
-        <!-- phone mask -->
-        <div class="form-group">
-          <label>US phone mask:</label>
-
-          <div class="input-group">
-            <div class="input-group-prepend">
-              <span class="input-group-text"><i class="fas fa-phone"></i></span>
-            </div>
-            <input type="text" class="form-control" data-inputmask="&quot;mask&quot;: &quot;(999) 999-9999&quot;" data-mask="" im-insert="true">
-          </div>
-          <!-- /.input group -->
-        </div>
-        <!-- /.form group -->
-
-        <!-- phone mask -->
-        <div class="form-group">
-          <label>Intl US phone mask:</label>
-
-          <div class="input-group">
-            <div class="input-group-prepend">
-              <span class="input-group-text"><i class="fas fa-phone"></i></span>
-            </div>
-            <input type="text" class="form-control" data-inputmask="'mask': ['999-999-9999 [x99999]', '+099 99 99 9999[9]-9999']" data-mask="" im-insert="true">
-          </div>
-          <!-- /.input group -->
-        </div>
-        <!-- /.form group -->
-
-        <!-- IP mask -->
-        <div class="form-group">
-          <label>IP mask:</label>
-
-          <div class="input-group">
-            <div class="input-group-prepend">
-              <span class="input-group-text"><i class="fas fa-laptop"></i></span>
-            </div>
-            <input type="text" class="form-control" data-inputmask="'alias': 'ip'" data-mask="" im-insert="true">
-          </div>
-          <!-- /.input group -->
-        </div>
-        <!-- /.form group -->
-
+      <div class="icon">
+        <i class="fa fa-users"></i>
       </div>
-      <!-- /.card-body -->
-    <div class="card-footer">
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <a href="#" class="small-box-footer">Ver Usuarios <i class="fas fa-arrow-circle-right"></i></a>
     </div>
-    </div>
-    <!-- /.card -->
   </div>
-  <!-- /.col (right) -->
+  <div class="col-lg-3 col-6">
+    <!-- small box -->
+    <div class="small-box bg-danger">
+      <div class="inner">
+        <h3>65</h3>
+        <p>Unique Visitors</p>
+      </div>
+      <div class="icon">
+        <i class="fa fa-bookmark"></i>
+      </div>
+      <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+    </div>
+  </div>
+  <!-- ./col -->
 </div>
+
 
 @endsection
