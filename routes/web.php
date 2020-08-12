@@ -19,9 +19,10 @@ Route::get('/', function () {
 
 //** login //
 Route::post('/login','Auth\LoginController@login')->name('auth');
+Route::get('/logout','Auth\LoginController@logout')->name('logout');
 
 
-Route::group(['middleware' => 'auth'], function () {
+Route::group(['middleware' => ['auth','active']], function () {
 	Route::get('/dashboard', 'HomeController@dashboard')->name('dashboard');
 
 

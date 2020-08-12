@@ -55,7 +55,14 @@
                   <p>Registrar Usuario</p>
                 </a>
               </li>
+              
             </ul>
+            <li class="nav-item">
+            <a href="{{ route('logout') }}" class="nav-link">
+              <i class="fas fa-sign-out-alt text-danger"></i>
+              <p class="text">Salir</p>
+            </a>
+          </li>
           </li>
           <li class="nav-header">LABELS</li>
           <li class="nav-item">
