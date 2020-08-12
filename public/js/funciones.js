@@ -15,5 +15,14 @@ $(document).ready(function() {
           	url:"plugins/datatables/spanish.json"
           }
 	});
+
+
 });//fin ready
+
+$(function() {
+    $('.toggle-button').bootstrapToggle({
+      on: 'Activo',
+      off: 'Desactivar'
+    });
+  })
 

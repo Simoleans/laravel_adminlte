@@ -11,16 +11,17 @@ class LoginController extends Controller
 {
     public function login(LoginRequest $request)
     {
-    	//dd($request->all());
-    		/*----------- LOGIN MANUAL , MODIFICABLE ----------*/
+        
+	  /*----------- LOGIN MANUAL , MODIFICABLE ----------*/
 
-	      if (Auth::attempt(['email' => $request->email, 'password' => $request->password], $request->remember == 'on' ? true : false)){
+      if (Auth::attempt(['email' => $request->email, 'password' => $request->password], $request->remember == 'on' ? true : false)){
 
-	      	return redirect()->intended('dashboard');
+      	return redirect()->intended('dashboard');
 
-	      }else{
-	      	return redirect()->route('login')->withErrors('¡Error! , Revise sus credenciales');
-	      }
+      }else{
+      	return redirect()->route('login')->withErrors('¡Error! , Revise sus credenciales');
+      }
+
     }
 
     public function logout()

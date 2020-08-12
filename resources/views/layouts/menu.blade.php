@@ -44,7 +44,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/layout/top-nav.html" class="nav-link {{ active('user.index') }}">
+                <a href="{{ route('user.index') }}" class="nav-link {{ active('user.index') }}">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Ver Usuarios</p>
                 </a>

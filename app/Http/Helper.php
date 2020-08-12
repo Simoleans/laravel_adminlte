@@ -2,7 +2,6 @@
 
 use App\Departamentos;
 
-
 /**
  * función para poner active o menú open en el menú
  * @param  [type] $route     ruta que se esta validando
